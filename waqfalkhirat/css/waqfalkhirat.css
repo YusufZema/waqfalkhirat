@@ -1,0 +1,123 @@
+:root{
+    --color-blak: #001;
+    --background-color:  #123;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.box-img{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.box-img img{
+    width: 100%;
+}
+.menw {
+    width: 60px ;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding: 20px ;
+    overflow: hidden;
+    transition: .5s;
+}
+.menw:hover{
+    width: 260px ;
+} 
+.menw .poryf{
+    display: flex;
+    align-items: center;
+    gap: 40px ;
+}
+.menw .poryf h2{
+    font-size: 20px ;
+    text-transform: capitalize;
+}
+.menw ul{
+    list-style: none;
+    height: 95%;
+   position: relative;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px ;
+    margin: 10px 0px ;
+    border-radius: 8px ;
+    display: flex;
+    align-items: center;
+    gap: 40px ;
+    transition: .5s;
+}
+ul li a:hover, .actif{
+    background-color: #ccddcc;
+}
+ul.log-out{
+    position: absolute;
+    bottom: 0%;
+    width: 1000% 
+}
+.log-out  {
+    background-color: #a00;
+}
+ul li a i{
+    font-size: 30px ;
+}
+/* info */
+.info{
+    
+    width: 100% ;
+    margin: 10px ;
+  
+}
+.info .title-info{
+    display: flex;
+    background-color: rgb(14, 126, 224);
+    padding: 10px ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0px ;
+}
+.serdh{
+    padding: 10px ; 
+}
+.serdh input{
+    border-radius: 4px ;
+    border: none;
+    margin-top: 0px 10px  ;
+    padding: 5px  10px ;
+}
+.serdh .icons{
+    display: flex ;
+    align-items: center;
+}
+.sho-info-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sho-info{
+    background-color:var(--background-color);
+    height: 150px ;
+    flex-basis: 150px ;
+    flex-grow: 1;
+    border-radius: 8px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sho-info .img{
+    width: 70px ;
+    margin: 0px 20px ;
+}
+/* info */
